@@ -1,40 +1,40 @@
 site:
-  name: Team Digital Demo
-  site: 'https://adv-demo-web.vercel.app'
+  name: Demo Web
+  site: 'https://adv-demo-web.vercel.app' # ✏️ เปลี่ยนเป็น URL เว็บไซต์จริงของคุณ เช่น 'https://mywebsite.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M # ✏️ รหัสยืนยัน Google Search Console (ถ้ามี)
 
 # Default SEO metadata
 metadata:
   title:
-    default: Team Digital - คอร์สเรียน AI และการตลาดดิจิทัล
-    template: '%s — Team Digital Demo'
-  description: "Team Digital Demo เป็นเว็บไซต์ตัวอย่าง สำหรับใช้คอร์สเรียน Digital Marketing 2026 + AI Tools"
+    default: Team Digital - คอร์สเรียน AI และการตลาดดิจิทัล # ✏️ ชื่อเว็บไซต์ที่แสดงบน Tab และ Google Search
+    template: '%s — Team Digital Demo' # ✏️ รูปแบบชื่อหน้าย่อย เช่น "สินค้า — Team Digital Demo"
+  description: "Team Digital Demo เป็นเว็บไซต์ตัวอย่าง สำหรับใช้คอร์สเรียน Digital Marketing 2026 + AI Tools" # ✏️ คำอธิบายเว็บไซต์ที่แสดงใน Google Search (ควรสั้น กระชับ ไม่เกิน 160 ตัวอักษร)
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Team Digital Demo
+    site_name: Team Digital Demo # ✏️ ชื่อเว็บไซต์ที่แสดงเมื่อแชร์ลิงก์บน Facebook / LINE
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/default.png' # ✏️ รูปภาพที่แสดงเมื่อแชร์ลิงก์ (ขนาดแนะนำ 1200x628 px) วางไฟล์ไว้ที่ src/assets/images/
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@arthelokyo' # ✏️ ชื่อ Twitter/X ของคุณ (ใส่ @ นำหน้า)
+    site: '@arthelokyo'   # ✏️ เหมือนกับ handle ด้านบน
     cardType: summary_large_image
 
 i18n:
-  language: th
+  language: th # ✏️ ภาษาหลักของเว็บ เช่น th = ไทย, en = อังกฤษ
   textDirection: ltr
 
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 6
+    postsPerPage: 6 # ✏️ จำนวนบทความต่อหน้าในหน้ารวมบทความ
 
     post:
       isEnabled: true
@@ -61,12 +61,12 @@ apps:
         index: false
 
     isRelatedPostsEnabled: true
-    relatedPostsCount: 4
+    relatedPostsCount: 4 # ✏️ จำนวนบทความที่เกี่ยวข้องที่แสดงท้ายบทความ
 
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-XXXXXXXXXX" # เอาเลขจาก GA4 มาใส่ที่นี่
+      id: "G-XXXXXXXXXX" # ✏️ รหัส Google Analytics 4 ของคุณ เช่น G-ABCD1234XY (หาได้ที่ analytics.google.com)
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system' # ✏️ ธีมเริ่มต้น: "system" = ตามระบบ | "light" = สว่างเสมอ | "dark" = มืดเสมอ
