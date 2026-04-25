@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   // ✏️ เมนูใน Header — แก้ text เพื่อเปลี่ยนชื่อเมนู, แก้ href เพื่อเปลี่ยนลิงก์
   links: [
-    { text: 'หน้าแรก', href: getPermalink('/') },
+    { text: 'Home', href: getPermalink('/') },
     { text: 'สินค้า', href: getPermalink('/products') },
     { text: 'เกี่ยวกับเรา', href: getPermalink('/about') },
     { text: 'บทความ', href: getBlogPermalink() },
